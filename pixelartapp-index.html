@@ -1,0 +1,83 @@
+<!-- The Following code is validated based on Udacity Style Guide -->
+<!DOCTYPE html>
+
+  <html lang="en"> <!-- Included to avoid warning issued by validator -->
+
+  <!-- head -->
+    <head>
+        <title>Pixel Art App!</title>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+          <link rel="stylesheet" href="pixelartapp-styles.css">
+          <!-- Citation for meta: https://www.w3schools.com/html/html_head.asp -->
+          <meta name="description" content="Free Web App">
+          <meta name="keywords" content="HTML, CSS, JavaScript">
+          <meta name="author" content="Nandini Krishnan">
+          <!-- Citation for viewport: https://www.w3schools.com/html/html_head.asp -->
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+  <!-- body -->
+    <body>
+      <header>
+        <!-- html for developing webapp for making Pixel Arts -->
+        <h1>UdacityLab: Pixel Art App</h1>
+      </header>
+
+      <!-- html for defining canvas size -->
+      <!-- fieldset and div elements are not necessary for this project now -->
+      <!-- The above mentioned elements in place now for future use -->
+      <h2>Customize your Grid</h2>
+      <form id="sizePicker">
+        <fieldset>
+          <legend>Canvas size</legend>
+          <div>
+            <label>Grid Height:
+              <input type="number" id="inputHeight" name="height" min="1" value="1" max="300">
+            </label>
+          </div>
+          <!-- Increased the max limit for ht and width from provided by Udacity-->
+          <div>
+            <label>Grid Width:
+              <input type="number" id="inputWidth" name="width" min="1" value="1" max="300">
+            </label>
+          </div>
+          <input type="submit">
+        </fieldset>
+      </form>
+
+      <h2>Pick Your Color</h2>
+      <input type="color" id="colorPicker" value="#ffff00">
+      <!-- Altered the default color choice on the picker to suit the background-->
+
+      <h2>Design Canvas</h2>
+      <table id="pixelCanvas"></table>
+
+      <!--Decided to include footer in this project-->
+
+      <!-- footer -->
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>Coding<span>Lab</span></h3>
+          <p class="Copyright">© 2020 Nandykrish Coding Repo</p>
+        </div>
+        <div class="footer-center">
+          <div>
+            <i class="Nandy-map-marker"></i>
+            <p><span>Edison, New Jersey</span>
+              Zipcode - 08817
+            </p>
+          </div>
+          <div>
+            <p class="footer-program-about">
+              <span>About the program:</span>
+              This was part of the Udacity Nanodegree Lab for JS
+            </p>
+          </div>
+        </div>
+      </footer>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="pixelartapp-designs.js"></script>
+
+    </body>
+  </html>

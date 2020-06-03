@@ -1,0 +1,71 @@
+/* The overall style reference given by Udacity is altered to suit my imagination */
+body {
+  text-align: center;
+  background: linear-gradient(-45deg, #7ee295, #ffff66, #0080ff, #2ab953);
+  /* Different background from Udacity's reference CSS */
+  background-size: 400% 400%;
+}
+
+/* Header */
+header {
+  display: block;
+}
+
+/* Content */
+h1 {
+  font-family: Pacifico;
+  font-size: 100px;
+  margin: 0.2em;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+  margin-top: 0.5em;
+}
+
+div {
+  color: blue; /* set text colors within div to blue including footer */
+}
+
+legend {
+  font-size: 20px;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  width: 20px;
+}
+
+input[type=number] {
+  width: 10em;
+  margin-bottom: 10px;
+}
+
+/* footer */
+
+footer {
+  font-size: 20px;
+  padding-top: 20%;
+}
+/*Above code validated with
+http://udacity.github.io/frontend-nanodegree-styleguide/css.html
+to the best of the student developer's ability
+*/
